@@ -25,6 +25,9 @@ class ViewController: UIViewController ,NFCNDEFReaderSessionDelegate{
  
      */
     
+    
+    //Apple CoreNFC 目前支持的格式有限，NFC 数据交换格式或 NDEF（通常用于当今市场上的大多数平板电脑和手机），比如 Apple Pay 。
+    
     //NFC会话失败
     func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: Error) {
         print("The session was invalidated: \(error.localizedDescription)")
